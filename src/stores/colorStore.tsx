@@ -17,7 +17,7 @@ export const Colors: IColor[] = [
 
 export class ColorStore {
   @observable
-  public body: IColor;
+  public body: IColor = Colors[0];
   public hemborder: IColor;
   public cuffborder: IColor;
   public neckline: IColor;
