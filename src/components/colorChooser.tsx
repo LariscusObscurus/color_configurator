@@ -23,7 +23,8 @@ export class ColorChooser extends React.Component<IColorizer> {
         body: { hexCode: "#ff0000", name: "red" },
         cuffborder: { hexCode: "#ff0000", name: "red" },
         hemborder: { hexCode: "#ff0000", name: "red" },
-        neckline: { hexCode: "#ff0000", name: "red" }
+        neckline: { hexCode: "#ff0000", name: "red" },
+        isFlecked: false
       });
     }
   }

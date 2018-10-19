@@ -1,0 +1,7 @@
+image.melierung {
+  opacity: 0.3;
+}
+
+image.melierung.unmotted {
+  opacity: 0;
+}
