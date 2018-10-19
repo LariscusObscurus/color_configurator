@@ -4,9 +4,20 @@ export interface IColorizeable {
   colorStore?: ColorStore;
 }
 
+export interface IColorizer {
+  colorStore?: ColorStore;
+}
+
 export interface IColor {
   hexCode: string;
   name: string;
+}
+
+export interface IClothingColors {
+  body: IColor;
+  hemborder: IColor;
+  cuffborder: IColor;
+  neckline: IColor;
 }
 
 export const Colors: IColor[] = [
@@ -17,13 +28,10 @@ export const Colors: IColor[] = [
 
 export class ColorStore {
   @observable
-  public body: IColor = Colors[0];
-  public hemborder: IColor;
-  public cuffborder: IColor;
-  public neckline: IColor;
+  public colors: IClothingColors;
 
   @action
-  public updateBody(color: IColor) {
-    this.body = color;
+  public updateColors(colors: IClothingColors) {
+    this.colors = colors;
   }
 }

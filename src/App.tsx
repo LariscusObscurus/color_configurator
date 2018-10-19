@@ -1,6 +1,7 @@
 import { Provider } from "mobx-react";
 import * as React from "react";
 import { Carousel } from "./components/carousel";
+import { ColorChooser } from "./components/colorChooser";
 import { ColorStore } from "./stores/colorStore";
 
 export class App extends React.Component {
@@ -16,7 +17,14 @@ export class App extends React.Component {
           <p className="App-intro">
             To get started, edit <code>src/App.tsx</code> and save to reload.
           </p>
-          <Carousel />
+          <div>
+            <Carousel />
+          </div>
+          <br />
+          <br />
+          <br />
+          <br />
+          <ColorChooser />
         </div>
       </Provider>
     );

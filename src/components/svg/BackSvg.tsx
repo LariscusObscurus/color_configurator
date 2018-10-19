@@ -10,7 +10,7 @@ export class BackSvg extends React.Component {
         x="0px"
         y="0px"
         viewBox="0 0 1300 1500"
-        enable-background="new 0 0 1300 1500"
+        enableBackground="new 0 0 1300 1500"
         xmlSpace="preserve"
         style={{ cursor: "pointer" }}
       >
@@ -53,7 +53,7 @@ export class BackSvg extends React.Component {
             <image
               className="melierung unmotted"
               overflow="visible"
-              clip-path="url(#body_0__RNDID_8716661_0_RNDID_8716661)"
+              clipPath="url(#body_0__RNDID_8716661_0_RNDID_8716661)"
               width="1300"
               height="1500"
               xlinkHref="https://s3.eu-central-1.amazonaws.com/heydorn/basics/melierung_koerperhalfte.jpg"
@@ -73,7 +73,7 @@ export class BackSvg extends React.Component {
             <image
               className="melierung unmotted"
               overflow="visible"
-              clip-path="url(#body_1__RNDID_8716661_0_RNDID_8716661)"
+              clipPath="url(#body_1__RNDID_8716661_0_RNDID_8716661)"
               width="1300"
               height="1500"
               xlinkHref="https://s3.eu-central-1.amazonaws.com/heydorn/basics/melierung_koerperhalfte.jpg"
@@ -93,7 +93,7 @@ export class BackSvg extends React.Component {
             <image
               className="melierung unmotted"
               overflow="visible"
-              clip-path="url(#body_2__RNDID_8716661_0_RNDID_8716661)"
+              clipPath="url(#body_2__RNDID_8716661_0_RNDID_8716661)"
               width="1300"
               height="1500"
               xlinkHref="https://s3.eu-central-1.amazonaws.com/heydorn/basics/melierung_koerperhalfte.jpg"
@@ -138,7 +138,7 @@ export class BackSvg extends React.Component {
             <image
               className="melierung unmotted"
               overflow="visible"
-              clip-path="url(#elbow_patches_0__RNDID_9810150_0_RNDID_9810150)"
+              clipPath="url(#elbow_patches_0__RNDID_9810150_0_RNDID_9810150)"
               width="1300"
               height="1500"
               xlinkHref="https://s3.eu-central-1.amazonaws.com/heydorn/basics/melierung_koerperhalfte.jpg"
@@ -161,7 +161,7 @@ export class BackSvg extends React.Component {
             <image
               className="melierung unmotted"
               overflow="visible"
-              clip-path="url(#elbow_patches_1__RNDID_9810150_0_RNDID_9810150)"
+              clipPath="url(#elbow_patches_1__RNDID_9810150_0_RNDID_9810150)"
               width="1300"
               height="1500"
               xlinkHref="https://s3.eu-central-1.amazonaws.com/heydorn/basics/melierung_koerperhalfte.jpg"
@@ -198,7 +198,7 @@ export class BackSvg extends React.Component {
             <image
               className="melierung unmotted"
               overflow="visible"
-              clip-path="url(#neckline_border_0__RNDID_7532565_0_RNDID_7532565)"
+              clipPath="url(#neckline_border_0__RNDID_7532565_0_RNDID_7532565)"
               width="1300"
               height="1500"
               xlinkHref="https://s3.eu-central-1.amazonaws.com/heydorn/basics/melierung_koerperhalfte.jpg"
@@ -243,7 +243,7 @@ export class BackSvg extends React.Component {
             <image
               className="melierung unmotted"
               overflow="visible"
-              clip-path="url(#cuff_border_0__RNDID_8141994_0_RNDID_8141994)"
+              clipPath="url(#cuff_border_0__RNDID_8141994_0_RNDID_8141994)"
               width="1300"
               height="1500"
               xlinkHref="https://s3.eu-central-1.amazonaws.com/heydorn/basics/melierung_koerperhalfte.jpg"
@@ -266,7 +266,7 @@ export class BackSvg extends React.Component {
             <image
               className="melierung unmotted"
               overflow="visible"
-              clip-path="url(#cuff_border_1__RNDID_8141994_0_RNDID_8141994)"
+              clipPath="url(#cuff_border_1__RNDID_8141994_0_RNDID_8141994)"
               width="1300"
               height="1500"
               xlinkHref="https://s3.eu-central-1.amazonaws.com/heydorn/basics/melierung_koerperhalfte.jpg"
@@ -303,7 +303,7 @@ export class BackSvg extends React.Component {
             <image
               className="melierung unmotted"
               overflow="visible"
-              clip-path="url(#hem_border_0__RNDID_8534560_0_RNDID_8534560)"
+              clipPath="url(#hem_border_0__RNDID_8534560_0_RNDID_8534560)"
               width="1300"
               height="1500"
               xlinkHref="https://s3.eu-central-1.amazonaws.com/heydorn/basics/melierung_koerperhalfte.jpg"
