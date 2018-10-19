@@ -78,7 +78,9 @@ export class FrontSvg extends React.Component<
               <use xlinkHref="#body_0__RNDID_9654365" overflow="visible" />
             </clipPath>
             <image
-              className="melierung unmotted"
+              className={
+                this.state.colors.isFlecked ? "melierung unmotted" : "melierung"
+              }
               overflow="visible"
               clipPath="url(#body_0__RNDID_9654365_0_RNDID_9654365)"
               width="1300"
@@ -98,7 +100,9 @@ export class FrontSvg extends React.Component<
               <use xlinkHref="#body_1__RNDID_9654365" overflow="visible" />
             </clipPath>
             <image
-              className="melierung unmotted"
+              className={
+                this.state.colors.isFlecked ? "melierung unmotted" : "melierung"
+              }
               overflow="visible"
               clipPath="url(#body_1__RNDID_9654365_0_RNDID_9654365)"
               width="1300"
@@ -135,7 +139,9 @@ export class FrontSvg extends React.Component<
               />
             </clipPath>
             <image
-              className="melierung unmotted"
+              className={
+                this.state.colors.isFlecked ? "melierung unmotted" : "melierung"
+              }
               overflow="visible"
               clipPath="url(#neckline_border_0__RNDID_3484311_0_RNDID_3484311)"
               width="1300"
@@ -180,7 +186,9 @@ export class FrontSvg extends React.Component<
               />
             </clipPath>
             <image
-              className="melierung unmotted"
+              className={
+                this.state.colors.isFlecked ? "melierung unmotted" : "melierung"
+              }
               overflow="visible"
               clipPath="url(#cuff_border_0__RNDID_9232497_0_RNDID_9232497)"
               width="1300"
@@ -203,7 +211,9 @@ export class FrontSvg extends React.Component<
               />
             </clipPath>
             <image
-              className="melierung unmotted"
+              className={
+                this.state.colors.isFlecked ? "melierung unmotted" : "melierung"
+              }
               overflow="visible"
               clipPath="url(#cuff_border_1__RNDID_9232497_0_RNDID_9232497)"
               width="1300"
@@ -240,7 +250,9 @@ export class FrontSvg extends React.Component<
               />
             </clipPath>
             <image
-              className="melierung unmotted"
+              className={
+                this.state.colors.isFlecked ? "melierung unmotted" : "melierung"
+              }
               overflow="visible"
               clipPath="url(#hem_border_0__RNDID_6626564_0_RNDID_6626564)"
               width="1300"
