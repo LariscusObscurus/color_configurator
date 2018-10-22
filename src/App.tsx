@@ -21,10 +21,10 @@ export class App extends React.Component {
             <Carousel />
           </div>
           <br />
-          <br />
-          <br />
-          <br />
-          <ColorChooser />
+          <ColorChooser colorProperty="body" />
+          <ColorChooser colorProperty="hemborder" />
+          <ColorChooser colorProperty="cuffborder" />
+          <ColorChooser colorProperty="neckline" />
         </div>
       </Provider>
     );

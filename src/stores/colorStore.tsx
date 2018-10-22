@@ -30,6 +30,7 @@ export const Colors: IColor[] = [
 export class ColorStore {
   @observable
   public colors: IClothingColors;
+
   constructor() {
     this.colors = {
       body: { hexCode: "#fffdf5", name: "default" } as IColor,
@@ -43,5 +44,12 @@ export class ColorStore {
   @action
   public updateColors(colors: IClothingColors) {
     this.colors = colors;
+  }
+
+  @action
+  public updateProp(propName: string, color: IColor) {
+    let newColors = { ...this.colors };
+    newColors[propName] = color;
+    this.colors = newColors;
   }
 }
