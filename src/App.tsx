@@ -83,9 +83,11 @@ class App extends React.Component<WithStyles<typeof styles>> {
                 <ColorChooser colorProperty="cuffborder" />
                 <ColorChooser colorProperty="neckline" />
                 <ColorChooser colorProperty="elbowPatches" />
-                <IsFleckedCheckbox />
-                <UndoRedo />
-                <Monogram />
+                <Grid item xs={6} container spacing={16}>
+                  <IsFleckedCheckbox />
+                  <Monogram />
+                  <UndoRedo />
+                </Grid>
               </Grid>
             </div>
           </React.Fragment>

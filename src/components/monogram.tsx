@@ -30,24 +30,24 @@ class Monogram extends React.Component<
       const input = event.target.value;
       this.setState({ monogram: input, error: input.length > 10 });
       if (this.props.monogramStore) {
-        this.props.monogramStore.updateMonogram(this.state.monogram.slice(0, 10));
+        this.props.monogramStore.updateMonogram(
+          this.state.monogram.slice(0, 10)
+        );
       }
     };
   }
 
   public render() {
     return (
-      <Grid item xs>
+      <Grid item xs={6}>
         <Paper className={this.props.classes.paper}>
           <h2>Monogram</h2>
-          <form>
-            <TextField
-              label="Monogram"
-              value={this.state.monogram}
-              error={this.state.error}
-              onChange={this.handleChange()}
-            />
-          </form>
+          <TextField
+            label="Monogram"
+            value={this.state.monogram}
+            error={this.state.error}
+            onChange={this.handleChange()}
+          />
         </Paper>
       </Grid>
     );
