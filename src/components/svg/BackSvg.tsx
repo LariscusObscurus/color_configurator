@@ -16,6 +16,7 @@ export class BackSvg extends React.Component<
         cuffborder: { hexCode: "#fffdf5", name: "default" } as IColor,
         hemborder: { hexCode: "#fffdf5", name: "default" } as IColor,
         neckline: { hexCode: "#fffdf5", name: "default" } as IColor,
+        elbowPatches: { hexCode: "#fffdf5", name: "default" } as IColor,
         isFlecked: false
       }
     };
@@ -139,14 +140,14 @@ export class BackSvg extends React.Component<
           <g>
             <path
               id="elbow_patches_0__RNDID_9810150"
-              stroke={this.state.colors.body.hexCode}
-              fill={this.state.colors.body.hexCode}
+              stroke={this.state.colors.elbowPatches.hexCode}
+              fill={this.state.colors.elbowPatches.hexCode}
               d="M338.156,720.034c-2.302-0.438-4.668-0.661-7.032-0.661c-14.706,0-30.038,8.478-43.173,23.872			c-13.021,15.261-22.467,35.607-26.599,57.291c-4.39,23.041-2.187,47.719,6.045,67.704c8.315,20.187,21.976,33.459,37.479,36.413			c2.248,0.429,4.55,0.646,6.844,0.646c0.001,0,0.003,0,0.005,0c14.484,0,29.475-8.654,42.213-24.37			c12.446-15.354,21.603-35.896,25.784-57.841c4.419-23.193,2.573-47.676-5.064-67.169			C366.758,735.757,353.795,723.013,338.156,720.034z"
             />
             <path
               id="elbow_patches_1__RNDID_9810150"
-              stroke={this.state.colors.body.hexCode}
-              fill={this.state.colors.body.hexCode}
+              stroke={this.state.colors.elbowPatches.hexCode}
+              fill={this.state.colors.elbowPatches.hexCode}
               d="M1052.974,806.569c-2.784-23.411-11.26-45.058-23.865-60.954c-12.558-15.836-28.063-24.558-43.662-24.558			c-1.646,0-3.311,0.099-4.946,0.293c-16.438,1.955-30.739,13.431-40.269,32.314c-9.512,18.849-13.132,42.831-10.193,67.527			c2.784,23.411,11.261,45.058,23.867,60.954c12.559,15.835,28.065,24.557,43.664,24.559c0.002,0,0.004,0,0.005,0			c1.643,0,3.305-0.099,4.94-0.293c16.438-1.955,30.738-13.432,40.267-32.314C1052.293,855.248,1055.912,831.267,1052.974,806.569z"
             />
           </g>
@@ -160,7 +161,7 @@ export class BackSvg extends React.Component<
             <defs>
               <path
                 id="elbow_patches_0__RNDID_9810150__RNDID_9810150"
-                stroke={this.state.colors.body.hexCode}
+                stroke={this.state.colors.elbowPatches.hexCode}
                 d="M338.156,720.034c-2.302-0.438-4.668-0.661-7.032-0.661c-14.706,0-30.038,8.478-43.173,23.872   c-13.021,15.261-22.467,35.607-26.599,57.291c-4.39,23.041-2.187,47.719,6.045,67.704c8.315,20.187,21.976,33.459,37.479,36.413   c2.248,0.429,4.55,0.646,6.844,0.646c0.001,0,0.003,0,0.005,0c14.484,0,29.475-8.654,42.213-24.37   c12.446-15.354,21.603-35.896,25.784-57.841c4.419-23.193,2.573-47.676-5.064-67.169   C366.758,735.757,353.795,723.013,338.156,720.034z"
               />
             </defs>
@@ -185,7 +186,7 @@ export class BackSvg extends React.Component<
             <defs>
               <path
                 id="elbow_patches_1__RNDID_9810150__RNDID_9810150"
-                stroke={this.state.colors.body.hexCode}
+                stroke={this.state.colors.elbowPatches.hexCode}
                 d="M1052.974,806.569c-2.784-23.411-11.26-45.058-23.865-60.954c-12.558-15.836-28.063-24.558-43.662-24.558   c-1.646,0-3.311,0.099-4.946,0.293c-16.438,1.955-30.739,13.431-40.269,32.314c-9.512,18.849-13.132,42.831-10.193,67.527   c2.784,23.411,11.261,45.058,23.867,60.954c12.559,15.835,28.065,24.557,43.664,24.559c0.002,0,0.004,0,0.005,0   c1.643,0,3.305-0.099,4.94-0.293c16.438-1.955,30.738-13.432,40.267-32.314C1052.293,855.248,1055.912,831.267,1052.974,806.569z"
               />
             </defs>

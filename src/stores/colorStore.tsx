@@ -18,6 +18,7 @@ export interface IClothingColors {
   hemborder: IColor;
   cuffborder: IColor;
   neckline: IColor;
+  elbowPatches: IColor;
   isFlecked: boolean;
 }
 
@@ -36,6 +37,7 @@ export class ColorStore {
       body: { hexCode: "#fffdf5", name: "default" } as IColor,
       cuffborder: { hexCode: "#fffdf5", name: "default" } as IColor,
       hemborder: { hexCode: "#fffdf5", name: "default" } as IColor,
+      elbowPatches: { hexCode: "#fffdf5", name: "default" } as IColor,
       neckline: { hexCode: "#fffdf5", name: "default" } as IColor,
       isFlecked: false
     };

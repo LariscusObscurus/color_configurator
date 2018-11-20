@@ -17,6 +17,7 @@ export class FrontSvg extends React.Component<
         cuffborder: { hexCode: "#fffdf5", name: "default" } as IColor,
         hemborder: { hexCode: "#fffdf5", name: "default" } as IColor,
         neckline: { hexCode: "#fffdf5", name: "default" } as IColor,
+        elbowPatches: { hexCode: "#fffdf5", name: "default" } as IColor,
         isFlecked: false
       }
     };

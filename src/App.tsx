@@ -25,6 +25,7 @@ export class App extends React.Component {
           <ColorChooser colorProperty="hemborder" />
           <ColorChooser colorProperty="cuffborder" />
           <ColorChooser colorProperty="neckline" />
+          <ColorChooser colorProperty="elbowPatches" />
         </div>
       </Provider>
     );
