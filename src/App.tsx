@@ -12,9 +12,12 @@ import {
   createStyles,
   Theme,
   WithStyles,
-  Grid
+  Grid,
+  Checkbox
 } from "@material-ui/core";
 import {  withRoot } from '@/Theme';
+import IsFleckedCheckbox from '@/components/isFleckedCheckbox'
+import UndoRedo from '@/components/undoRedo'
 
 export const styles = ({ palette, spacing, breakpoints }: Theme) =>
   createStyles({
@@ -25,26 +28,28 @@ export const styles = ({ palette, spacing, breakpoints }: Theme) =>
       position: "relative"
     },
     layout: {
-      width: "50%",
+      display: 'flex',
       marginLeft: "auto",
       marginRight: "auto",
     },
     paper: {
+      width: '50%',
       marginTop: spacing.unit * 3,
       marginBottom: spacing.unit * 3,
       padding: spacing.unit * 2,
-      [breakpoints.up(600 + spacing.unit * 3 * 2)]: {
-        marginTop: spacing.unit * 6,
-        marginBottom: spacing.unit * 6,
-        padding: spacing.unit * 3
-      }
+    },
+    colorPickers: {
+      width: '50%',
+      marginTop: spacing.unit * 3,
+      marginBottom: spacing.unit * 3,
+      padding: spacing.unit * 2,
     },
     stepper: {
       padding: `${spacing.unit * 3}px 0 ${spacing.unit * 5}px`
     },
   });
 
-class App extends React.Component<WithStyles<typeof styles>, {}> {
+class App extends React.Component<WithStyles<typeof styles>> {
   private colorStore: ColorStore = new ColorStore();
 
   public render() {
@@ -69,12 +74,14 @@ class App extends React.Component<WithStyles<typeof styles>, {}> {
               <Paper className={classes.paper}>
                 <Carousel />
               </Paper>
-              <Grid container spacing={16}>
+              <Grid container spacing={16} className={classes.colorPickers}>
                 <ColorChooser colorProperty="body" />
                 <ColorChooser colorProperty="hemborder" />
                 <ColorChooser colorProperty="cuffborder" />
                 <ColorChooser colorProperty="neckline" />
                 <ColorChooser colorProperty="elbowPatches" />
+                <IsFleckedCheckbox />
+                <UndoRedo />
               </Grid>
             </div>
           </React.Fragment>
