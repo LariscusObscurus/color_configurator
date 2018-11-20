@@ -17,7 +17,7 @@ export class Carousel extends React.Component {
       swipe: true
     };
     return (
-      <div id="carousel-wrapper">
+      <div>
         <Slider {...settings}>
           <div>
             <FrontSvg />

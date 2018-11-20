@@ -1,14 +1,14 @@
 import { IColorizer, Colors, IColor } from "@/stores/colorStore";
 import { inject } from "mobx-react";
 import * as React from "react";
-import { FrontSvg } from "./svg/FrontSvg";
+import { Button, withStyles, WithStyles, Paper, Grid } from "@material-ui/core";
 
-interface IColorChooserProps extends IColorizer {
+interface IColorChooserProps extends WithStyles, IColorizer {
   colorProperty: string;
 }
 
 @inject("colorStore")
-export class ColorChooser extends React.Component<IColorChooserProps> {
+class ColorChooser extends React.Component<IColorChooserProps> {
   constructor(props: any) {
     super(props);
     this.clicked = this.clicked.bind(this);
@@ -16,10 +16,12 @@ export class ColorChooser extends React.Component<IColorChooserProps> {
 
   public render() {
     return (
-      <div>
-        <h1>{this.props.colorProperty}</h1>
-        {this.createColors()}
-      </div>
+      <Grid item xs={6} key={this.props.colorProperty}>
+        <Paper className={this.props.classes.paper}>
+          <h2>{this.props.colorProperty}</h2>
+          <div className={this.props.classes.colors}>{this.createColors()}</div>
+        </Paper>
+      </Grid>
     );
   }
 
@@ -31,14 +33,29 @@ export class ColorChooser extends React.Component<IColorChooserProps> {
 
   private createColors() {
     return Colors.map(color => (
-      <button key={color.hexCode} onClick={(event: any) => this.clicked(color)}>
-        {color.name}
-      </button>
+      <div
+        className={this.props.classes.colorCircle}
+        style={{ backgroundColor: color.hexCode }}
+        onClick={(event: any) => this.clicked(color)}
+      />
     ));
   }
 }
-/*
-  { hexCode: "#ff0000", name: "red" },
-  { hexCode: "#00ff00", name: "green" },
-  { hexCode: "#0000ff", name: "blue" }
-*/
+
+export default withStyles(({ spacing }) => ({
+  paper: {
+    padding: spacing.unit * 2,
+    textAlign: 'center'
+  },
+  colors: {
+    display: 'flex',
+    justifyContent: 'flex-start',
+    flexWrap: 'wrap'
+  },
+  colorCircle: {
+    margin: 5,
+    width: '50px',
+    height: '50px',
+    borderRadius: '100px'
+  }
+}))(ColorChooser);
