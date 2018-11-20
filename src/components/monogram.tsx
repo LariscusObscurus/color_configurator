@@ -45,7 +45,7 @@ class Monogram extends React.Component<
 
   public render() {
     return (
-      <Grid item xs={6}>
+      <Grid item xs>
         <Paper className={this.props.classes.paper}>
           <h2>Monogram</h2>
           <TextField

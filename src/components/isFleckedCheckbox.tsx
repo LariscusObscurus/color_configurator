@@ -41,7 +41,7 @@ class IsFleckedCheckbox extends React.Component<
 
   public render() {
     return (
-      <Grid item xs={6}>
+      <Grid item xs>
         <Paper className={this.props.classes.paper}>
           <h2>Melierung</h2>
           <FormControlLabel

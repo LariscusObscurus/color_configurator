@@ -51,9 +51,7 @@ export const styles = ({ palette, spacing, breakpoints }: Theme) =>
       padding: spacing.unit * 2
     },
     colorPickers: {
-      [breakpoints.up("md")]: {
-        width: "50%"
-      },
+      [breakpoints.up("md")]: {},
       [breakpoints.down("md")]: {
         width: "100%"
       },
@@ -92,22 +90,26 @@ class App extends React.Component<WithStyles<typeof styles>> {
             </AppBar>
 
             <div className={this.props.classes.layout}>
-              <Paper className={classes.paper}>
-                <Carousel />
-              </Paper>
-              <Grid container spacing={16} className={classes.colorPickers}>
-                <ColorChooser colorProperty="body" />
-                <ColorChooser colorProperty="hemborder" />
-                <ColorChooser colorProperty="cuffborder" />
-                <ColorChooser colorProperty="neckline" />
-                <ColorChooser colorProperty="elbowPatches" />
-              </Grid>
+              <div className={classes.paper}>
+                <Paper>
+                  <Carousel />
+                </Paper>
+              </div>
+              <div>
+                <Grid container spacing={16} className={classes.colorPickers}>
+                  <ColorChooser colorProperty="body" />
+                  <ColorChooser colorProperty="hemborder" />
+                  <ColorChooser colorProperty="cuffborder" />
+                  <ColorChooser colorProperty="neckline" />
+                  <ColorChooser colorProperty="elbowPatches" />
+                </Grid>
+                <Grid container spacing={16} className={classes.colorPickers}>
+                  <IsFleckedCheckbox />
+                  <Monogram />
+                  <UndoRedo />
+                </Grid>
+              </div>
             </div>
-            <Grid container spacing={16} className={classes.colorPickers}>
-              <IsFleckedCheckbox />
-              <Monogram />
-              <UndoRedo />
-            </Grid>
           </React.Fragment>
         </Provider>
       </div>
