@@ -9,13 +9,14 @@ import {
 import { inject } from "mobx-react";
 import * as React from "react";
 import { IMonogramable } from "@/stores/monoGramStore";
+import { autorun } from 'mobx';
 
 interface IMonogramProps extends WithStyles, IMonogramable {}
 
 @inject("monogramStore")
 class Monogram extends React.Component<
   IMonogramProps,
-  { monogram: string; error: boolean }
+  { monogram: string, error: boolean }
 > {
   constructor(props: any) {
     super(props);
@@ -23,6 +24,13 @@ class Monogram extends React.Component<
       monogram: "",
       error: false
     };
+
+    autorun(() => {
+      if (this.props.monogramStore) {
+          const monogram= this.props.monogramStore.monogram;
+        this.setState({ monogram: monogram , error: monogram.length > 10});
+      }
+    });
   }
 
   private handleChange() {
@@ -30,9 +38,7 @@ class Monogram extends React.Component<
       const input = event.target.value;
       this.setState({ monogram: input, error: input.length > 10 });
       if (this.props.monogramStore) {
-        this.props.monogramStore.updateMonogram(
-          this.state.monogram.slice(0, 10)
-        );
+        this.props.monogramStore.updateMonogram(input);
       }
     };
   }

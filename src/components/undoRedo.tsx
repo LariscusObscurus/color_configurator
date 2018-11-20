@@ -2,10 +2,11 @@ import { WithStyles, Grid, withStyles, Paper, Button } from "@material-ui/core";
 import { inject } from "mobx-react";
 import * as React from "react";
 import { IColorizer } from "@/stores/colorStore";
+import { IMonogramable } from '@/stores/monoGramStore';
 
-interface IUndoRedoProps extends WithStyles, IColorizer {}
+interface IUndoRedoProps extends WithStyles, IColorizer, IMonogramable {}
 
-@inject("colorStore")
+@inject("colorStore", "monogramStore")
 class UndoRedo extends React.Component<IUndoRedoProps> {
   constructor(props: any) {
     super(props);
@@ -27,6 +28,9 @@ class UndoRedo extends React.Component<IUndoRedoProps> {
       if (this.props.colorStore) {
         this.props.colorStore.redo();
       }
+      if (this.props.monogramStore) {
+        this.props.monogramStore.redo();
+      }
     };
   }
 
@@ -34,6 +38,9 @@ class UndoRedo extends React.Component<IUndoRedoProps> {
     return () => {
       if (this.props.colorStore) {
         this.props.colorStore.undo();
+      }
+      if (this.props.monogramStore) {
+        this.props.monogramStore.undo();
       }
     };
   }
