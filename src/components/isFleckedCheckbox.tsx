@@ -9,6 +9,7 @@ import {
 import { inject } from "mobx-react";
 import * as React from "react";
 import { IColorizer } from "@/stores/colorStore";
+import { autorun } from "mobx";
 
 interface IIsFleckedProps extends WithStyles, IColorizer {}
 
@@ -22,6 +23,11 @@ class IsFleckedCheckbox extends React.Component<
     this.state = {
       isFlecked: false
     };
+    autorun(() => {
+      if (this.props.colorStore) {
+        this.setState({ isFlecked: this.props.colorStore.colors.isFlecked });
+      }
+    });
   }
 
   private handleChange() {
@@ -39,7 +45,7 @@ class IsFleckedCheckbox extends React.Component<
         <Paper className={this.props.classes.paper}>
           <h2>Melierung</h2>
           <FormControlLabel
-          label="Melierung aktivieren"
+            label="Melierung aktivieren"
             control={
               <Checkbox
                 value="checkbox"
