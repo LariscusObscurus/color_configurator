@@ -18,6 +18,8 @@ import {
 import {  withRoot } from '@/Theme';
 import IsFleckedCheckbox from '@/components/isFleckedCheckbox'
 import UndoRedo from '@/components/undoRedo'
+import Monogram from '@/components/monogram'
+import { MonogramStore } from './stores/monoGramStore';
 
 export const styles = ({ palette, spacing, breakpoints }: Theme) =>
   createStyles({
@@ -51,12 +53,13 @@ export const styles = ({ palette, spacing, breakpoints }: Theme) =>
 
 class App extends React.Component<WithStyles<typeof styles>> {
   private colorStore: ColorStore = new ColorStore();
+  private monogramStore: MonogramStore = new MonogramStore();
 
   public render() {
     const { classes } = this.props;
     return (
       <div className={classes.root}>
-        <Provider colorStore={this.colorStore}>
+        <Provider colorStore={this.colorStore} monogramStore={this.monogramStore}>
           <React.Fragment>
             <AppBar
               position="absolute"
@@ -82,6 +85,7 @@ class App extends React.Component<WithStyles<typeof styles>> {
                 <ColorChooser colorProperty="elbowPatches" />
                 <IsFleckedCheckbox />
                 <UndoRedo />
+                <Monogram />
               </Grid>
             </div>
           </React.Fragment>

@@ -3,11 +3,17 @@ import { autorun, reaction } from "mobx";
 import { inject, observer } from "mobx-react";
 import * as React from "react";
 import "./Svg.css";
+import { IMonogramable } from '@/stores/monoGramStore';
 
-@inject("colorStore")
+interface IFrontSvgProps extends IColorizeable, IMonogramable{}
+
+@inject("colorStore", "monogramStore")
 export class FrontSvg extends React.Component<
-  IColorizeable,
-  { colors: IClothingColors }
+  IFrontSvgProps,
+  {
+    colors: IClothingColors,
+    monogram: string
+  }
 > {
   constructor(props: any) {
     super(props);
@@ -19,16 +25,22 @@ export class FrontSvg extends React.Component<
         neckline: { hexCode: "#fffdf5", name: "default" } as IColor,
         elbowPatches: { hexCode: "#fffdf5", name: "default" } as IColor,
         isFlecked: false
-      }
+      },
+      monogram:  ''
     };
   }
 
   public componentDidMount() {
     const vm = this;
     autorun(() => {
+      let state = {...this.state};
       if (vm.props.colorStore) {
-        vm.setState({ colors: vm.props.colorStore.colors });
+        state.colors = vm.props.colorStore.colors;
       }
+      if (vm.props.monogramStore) {
+        state.monogram = vm.props.monogramStore.monogram;
+      }
+      vm.setState(state);
     });
   }
 
@@ -272,6 +284,7 @@ export class FrontSvg extends React.Component<
             />
           </g>
         </g>
+        <text xmlSpace="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_23" y="550" x="713" stroke-width="0" stroke="#000" fill="#000000">{this.state.monogram}</text>
       </svg>
     );
   }
