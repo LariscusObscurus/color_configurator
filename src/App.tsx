@@ -15,11 +15,11 @@ import {
   Grid,
   Checkbox
 } from "@material-ui/core";
-import {  withRoot } from '@/Theme';
-import IsFleckedCheckbox from '@/components/isFleckedCheckbox'
-import UndoRedo from '@/components/undoRedo'
-import Monogram from '@/components/monogram'
-import { MonogramStore } from './stores/monoGramStore';
+import { withRoot } from "@/Theme";
+import IsFleckedCheckbox from "@/components/isFleckedCheckbox";
+import UndoRedo from "@/components/undoRedo";
+import Monogram from "@/components/monogram";
+import { MonogramStore } from "./stores/monoGramStore";
 
 export const styles = ({ palette, spacing, breakpoints }: Theme) =>
   createStyles({
@@ -30,25 +30,40 @@ export const styles = ({ palette, spacing, breakpoints }: Theme) =>
       position: "relative"
     },
     layout: {
-      display: 'flex',
+      padding: 20,
       marginLeft: "auto",
       marginRight: "auto",
+      [breakpoints.up("md")]: {
+        display: "flex",
+        width: "100%"
+      },
+      [breakpoints.down("md")]: {
+        display: "block"
+      }
     },
     paper: {
-      width: '50%',
+      width: "50%",
+      [breakpoints.down("md")]: {
+        margin: "0 auto"
+      },
       marginTop: spacing.unit * 3,
       marginBottom: spacing.unit * 3,
-      padding: spacing.unit * 2,
+      padding: spacing.unit * 2
     },
     colorPickers: {
-      width: '50%',
+      [breakpoints.up("md")]: {
+        width: "50%"
+      },
+      [breakpoints.down("md")]: {
+        width: "100%"
+      },
       marginTop: spacing.unit * 3,
       marginBottom: spacing.unit * 3,
-      padding: spacing.unit * 2,
+      padding: spacing.unit * 2
     },
     stepper: {
       padding: `${spacing.unit * 3}px 0 ${spacing.unit * 5}px`
-    },
+    }
   });
 
 class App extends React.Component<WithStyles<typeof styles>> {
@@ -59,7 +74,10 @@ class App extends React.Component<WithStyles<typeof styles>> {
     const { classes } = this.props;
     return (
       <div className={classes.root}>
-        <Provider colorStore={this.colorStore} monogramStore={this.monogramStore}>
+        <Provider
+          colorStore={this.colorStore}
+          monogramStore={this.monogramStore}
+        >
           <React.Fragment>
             <AppBar
               position="absolute"
@@ -83,13 +101,13 @@ class App extends React.Component<WithStyles<typeof styles>> {
                 <ColorChooser colorProperty="cuffborder" />
                 <ColorChooser colorProperty="neckline" />
                 <ColorChooser colorProperty="elbowPatches" />
-                <Grid item xs={6} container spacing={16}>
-                  <IsFleckedCheckbox />
-                  <Monogram />
-                  <UndoRedo />
-                </Grid>
               </Grid>
             </div>
+            <Grid container spacing={16} className={classes.colorPickers}>
+              <IsFleckedCheckbox />
+              <Monogram />
+              <UndoRedo />
+            </Grid>
           </React.Fragment>
         </Provider>
       </div>
