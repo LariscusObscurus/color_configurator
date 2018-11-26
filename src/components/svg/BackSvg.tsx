@@ -88,7 +88,7 @@ export class BackSvg extends React.Component<
               clipPath="url(#body_0__RNDID_8716661_0_RNDID_8716661)"
               width="1300"
               height="1500"
-              xlinkHref="https://s3.eu-central-1.amazonaws.com/heydorn/basics/melierung_koerperhalfte.jpg"
+              xlinkHref="melierung_koerperhalfte.jpg"
             />
           </g>
           <g>
@@ -110,7 +110,7 @@ export class BackSvg extends React.Component<
               clipPath="url(#body_1__RNDID_8716661_0_RNDID_8716661)"
               width="1300"
               height="1500"
-              xlinkHref="https://s3.eu-central-1.amazonaws.com/heydorn/basics/melierung_koerperhalfte.jpg"
+              xlinkHref="melierung_koerperhalfte.jpg"
             />
           </g>
           <g>
@@ -132,7 +132,7 @@ export class BackSvg extends React.Component<
               clipPath="url(#body_2__RNDID_8716661_0_RNDID_8716661)"
               width="1300"
               height="1500"
-              xlinkHref="https://s3.eu-central-1.amazonaws.com/heydorn/basics/melierung_koerperhalfte.jpg"
+              xlinkHref="melierung_koerperhalfte.jpg"
             />
           </g>
         </g>
@@ -179,7 +179,7 @@ export class BackSvg extends React.Component<
               clipPath="url(#elbow_patches_0__RNDID_9810150_0_RNDID_9810150)"
               width="1300"
               height="1500"
-              xlinkHref="https://s3.eu-central-1.amazonaws.com/heydorn/basics/melierung_koerperhalfte.jpg"
+              xlinkHref="melierung_koerperhalfte.jpg"
             />
           </g>
           <g>
@@ -204,7 +204,7 @@ export class BackSvg extends React.Component<
               clipPath="url(#elbow_patches_1__RNDID_9810150_0_RNDID_9810150)"
               width="1300"
               height="1500"
-              xlinkHref="https://s3.eu-central-1.amazonaws.com/heydorn/basics/melierung_koerperhalfte.jpg"
+              xlinkHref="melierung_koerperhalfte.jpg"
             />
           </g>
         </g>
@@ -243,7 +243,7 @@ export class BackSvg extends React.Component<
               clipPath="url(#neckline_border_0__RNDID_7532565_0_RNDID_7532565)"
               width="1300"
               height="1500"
-              xlinkHref="https://s3.eu-central-1.amazonaws.com/heydorn/basics/melierung_koerperhalfte.jpg"
+              xlinkHref="melierung_koerperhalfte.jpg"
             />
           </g>
         </g>
@@ -290,7 +290,7 @@ export class BackSvg extends React.Component<
               clipPath="url(#cuff_border_0__RNDID_8141994_0_RNDID_8141994)"
               width="1300"
               height="1500"
-              xlinkHref="https://s3.eu-central-1.amazonaws.com/heydorn/basics/melierung_koerperhalfte.jpg"
+              xlinkHref="melierung_koerperhalfte.jpg"
             />
           </g>
           <g>
@@ -315,7 +315,7 @@ export class BackSvg extends React.Component<
               clipPath="url(#cuff_border_1__RNDID_8141994_0_RNDID_8141994)"
               width="1300"
               height="1500"
-              xlinkHref="https://s3.eu-central-1.amazonaws.com/heydorn/basics/melierung_koerperhalfte.jpg"
+              xlinkHref="melierung_koerperhalfte.jpg"
             />
           </g>
         </g>
@@ -354,7 +354,7 @@ export class BackSvg extends React.Component<
               clipPath="url(#hem_border_0__RNDID_8534560_0_RNDID_8534560)"
               width="1300"
               height="1500"
-              xlinkHref="https://s3.eu-central-1.amazonaws.com/heydorn/basics/melierung_koerperhalfte.jpg"
+              xlinkHref="melierung_koerperhalfte.jpg"
             />
           </g>
         </g>
@@ -364,7 +364,7 @@ export class BackSvg extends React.Component<
               overflow="visible"
               width="1300"
               height="1500"
-              xlinkHref="https://s3.eu-central-1.amazonaws.com/heydorn/basics/dob004/2.jpg"
+              xlinkHref="2.jpg"
             />
           </g>
         </g>

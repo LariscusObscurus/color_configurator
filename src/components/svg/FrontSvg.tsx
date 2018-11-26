@@ -98,7 +98,7 @@ export class FrontSvg extends React.Component<
               clipPath="url(#body_0__RNDID_9654365_0_RNDID_9654365)"
               width="1300"
               height="1500"
-              xlinkHref="https://s3.eu-central-1.amazonaws.com/heydorn/basics/melierung_koerperhalfte.jpg"
+              xlinkHref="melierung_koerperhalfte.jpg"
             />
           </g>
           <g>
@@ -120,7 +120,7 @@ export class FrontSvg extends React.Component<
               clipPath="url(#body_1__RNDID_9654365_0_RNDID_9654365)"
               width="1300"
               height="1500"
-              xlinkHref="https://s3.eu-central-1.amazonaws.com/heydorn/basics/melierung_koerperhalfte.jpg"
+              xlinkHref="melierung_koerperhalfte.jpg"
             />
           </g>
         </g>
@@ -159,7 +159,7 @@ export class FrontSvg extends React.Component<
               clipPath="url(#neckline_border_0__RNDID_3484311_0_RNDID_3484311)"
               width="1300"
               height="1500"
-              xlinkHref="https://s3.eu-central-1.amazonaws.com/heydorn/basics/melierung_koerperhalfte.jpg"
+              xlinkHref="melierung_koerperhalfte.jpg"
             />
           </g>
         </g>
@@ -206,7 +206,7 @@ export class FrontSvg extends React.Component<
               clipPath="url(#cuff_border_0__RNDID_9232497_0_RNDID_9232497)"
               width="1300"
               height="1500"
-              xlinkHref="https://s3.eu-central-1.amazonaws.com/heydorn/basics/melierung_koerperhalfte.jpg"
+              xlinkHref="melierung_koerperhalfte.jpg"
             />
           </g>
           <g>
@@ -231,7 +231,7 @@ export class FrontSvg extends React.Component<
               clipPath="url(#cuff_border_1__RNDID_9232497_0_RNDID_9232497)"
               width="1300"
               height="1500"
-              xlinkHref="https://s3.eu-central-1.amazonaws.com/heydorn/basics/melierung_koerperhalfte.jpg"
+              xlinkHref="melierung_koerperhalfte.jpg"
             />
           </g>
         </g>
@@ -270,7 +270,7 @@ export class FrontSvg extends React.Component<
               clipPath="url(#hem_border_0__RNDID_6626564_0_RNDID_6626564)"
               width="1300"
               height="1500"
-              xlinkHref="https://s3.eu-central-1.amazonaws.com/heydorn/basics/melierung_koerperhalfte.jpg"
+              xlinkHref="melierung_koerperhalfte.jpg"
             />
           </g>
         </g>
@@ -280,7 +280,7 @@ export class FrontSvg extends React.Component<
               overflow="visible"
               width="1300"
               height="1500"
-              xlinkHref="https://s3.eu-central-1.amazonaws.com/heydorn/basics/dob004/1.jpg"
+              xlinkHref="1.jpg"
             />
           </g>
         </g>

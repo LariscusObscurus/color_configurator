@@ -44,6 +44,7 @@ export const styles = ({ palette, spacing, breakpoints }: Theme) =>
     paper: {
       width: "50%",
       [breakpoints.down("md")]: {
+        width: "100%",
         margin: "0 auto"
       },
       marginTop: spacing.unit * 3,

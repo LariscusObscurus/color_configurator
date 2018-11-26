@@ -16,7 +16,7 @@ class ColorChooser extends React.Component<IColorChooserProps> {
 
   public render() {
     return (
-      <Grid item xs={6} key={this.props.colorProperty}>
+      <Grid item xs={12} md={6} key={this.props.colorProperty}>
         <Paper className={this.props.classes.paper}>
           <h2>{this.props.colorProperty}</h2>
           <div className={this.props.classes.colors}>{this.createColors()}</div>
