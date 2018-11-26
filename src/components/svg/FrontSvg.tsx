@@ -4,6 +4,8 @@ import { inject, observer } from "mobx-react";
 import * as React from "react";
 import "./Svg.css";
 import { IMonogramable } from '@/stores/monoGramStore';
+import frontImage from "@/assets/images/1.jpg"
+import melierung from "@/assets/images/melierung_koerperhalfte.jpg"
 
 interface IFrontSvgProps extends IColorizeable, IMonogramable{}
 
@@ -98,7 +100,7 @@ export class FrontSvg extends React.Component<
               clipPath="url(#body_0__RNDID_9654365_0_RNDID_9654365)"
               width="1300"
               height="1500"
-              xlinkHref="melierung_koerperhalfte.jpg"
+              xlinkHref={melierung}
             />
           </g>
           <g>
@@ -120,7 +122,7 @@ export class FrontSvg extends React.Component<
               clipPath="url(#body_1__RNDID_9654365_0_RNDID_9654365)"
               width="1300"
               height="1500"
-              xlinkHref="melierung_koerperhalfte.jpg"
+              xlinkHref={melierung}
             />
           </g>
         </g>
@@ -159,7 +161,7 @@ export class FrontSvg extends React.Component<
               clipPath="url(#neckline_border_0__RNDID_3484311_0_RNDID_3484311)"
               width="1300"
               height="1500"
-              xlinkHref="melierung_koerperhalfte.jpg"
+              xlinkHref={melierung}
             />
           </g>
         </g>
@@ -206,7 +208,7 @@ export class FrontSvg extends React.Component<
               clipPath="url(#cuff_border_0__RNDID_9232497_0_RNDID_9232497)"
               width="1300"
               height="1500"
-              xlinkHref="melierung_koerperhalfte.jpg"
+              xlinkHref={melierung}
             />
           </g>
           <g>
@@ -231,7 +233,7 @@ export class FrontSvg extends React.Component<
               clipPath="url(#cuff_border_1__RNDID_9232497_0_RNDID_9232497)"
               width="1300"
               height="1500"
-              xlinkHref="melierung_koerperhalfte.jpg"
+              xlinkHref={melierung}
             />
           </g>
         </g>
@@ -270,7 +272,7 @@ export class FrontSvg extends React.Component<
               clipPath="url(#hem_border_0__RNDID_6626564_0_RNDID_6626564)"
               width="1300"
               height="1500"
-              xlinkHref="melierung_koerperhalfte.jpg"
+              xlinkHref={melierung}
             />
           </g>
         </g>
@@ -280,7 +282,7 @@ export class FrontSvg extends React.Component<
               overflow="visible"
               width="1300"
               height="1500"
-              xlinkHref="1.jpg"
+              xlinkHref={frontImage}
             />
           </g>
         </g>

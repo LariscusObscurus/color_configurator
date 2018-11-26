@@ -2,6 +2,8 @@ import * as React from "react";
 import { IColorizeable, IClothingColors, IColor } from "@/stores/colorStore";
 import { autorun } from "mobx";
 import { inject } from "mobx-react";
+import backImage from "@/assets/images/2.jpg"
+import melierung from "@/assets/images/melierung_koerperhalfte.jpg"
 
 @inject("colorStore")
 export class BackSvg extends React.Component<
@@ -88,7 +90,7 @@ export class BackSvg extends React.Component<
               clipPath="url(#body_0__RNDID_8716661_0_RNDID_8716661)"
               width="1300"
               height="1500"
-              xlinkHref="melierung_koerperhalfte.jpg"
+              xlinkHref={melierung}
             />
           </g>
           <g>
@@ -110,7 +112,7 @@ export class BackSvg extends React.Component<
               clipPath="url(#body_1__RNDID_8716661_0_RNDID_8716661)"
               width="1300"
               height="1500"
-              xlinkHref="melierung_koerperhalfte.jpg"
+              xlinkHref={melierung}
             />
           </g>
           <g>
@@ -132,7 +134,7 @@ export class BackSvg extends React.Component<
               clipPath="url(#body_2__RNDID_8716661_0_RNDID_8716661)"
               width="1300"
               height="1500"
-              xlinkHref="melierung_koerperhalfte.jpg"
+              xlinkHref={melierung}
             />
           </g>
         </g>
@@ -179,7 +181,7 @@ export class BackSvg extends React.Component<
               clipPath="url(#elbow_patches_0__RNDID_9810150_0_RNDID_9810150)"
               width="1300"
               height="1500"
-              xlinkHref="melierung_koerperhalfte.jpg"
+              xlinkHref={melierung}
             />
           </g>
           <g>
@@ -204,7 +206,7 @@ export class BackSvg extends React.Component<
               clipPath="url(#elbow_patches_1__RNDID_9810150_0_RNDID_9810150)"
               width="1300"
               height="1500"
-              xlinkHref="melierung_koerperhalfte.jpg"
+              xlinkHref={melierung}
             />
           </g>
         </g>
@@ -243,7 +245,7 @@ export class BackSvg extends React.Component<
               clipPath="url(#neckline_border_0__RNDID_7532565_0_RNDID_7532565)"
               width="1300"
               height="1500"
-              xlinkHref="melierung_koerperhalfte.jpg"
+              xlinkHref={melierung}
             />
           </g>
         </g>
@@ -290,7 +292,7 @@ export class BackSvg extends React.Component<
               clipPath="url(#cuff_border_0__RNDID_8141994_0_RNDID_8141994)"
               width="1300"
               height="1500"
-              xlinkHref="melierung_koerperhalfte.jpg"
+              xlinkHref={melierung}
             />
           </g>
           <g>
@@ -315,7 +317,7 @@ export class BackSvg extends React.Component<
               clipPath="url(#cuff_border_1__RNDID_8141994_0_RNDID_8141994)"
               width="1300"
               height="1500"
-              xlinkHref="melierung_koerperhalfte.jpg"
+              xlinkHref={melierung}
             />
           </g>
         </g>
@@ -354,7 +356,7 @@ export class BackSvg extends React.Component<
               clipPath="url(#hem_border_0__RNDID_8534560_0_RNDID_8534560)"
               width="1300"
               height="1500"
-              xlinkHref="melierung_koerperhalfte.jpg"
+              xlinkHref={melierung}
             />
           </g>
         </g>
@@ -364,7 +366,7 @@ export class BackSvg extends React.Component<
               overflow="visible"
               width="1300"
               height="1500"
-              xlinkHref="2.jpg"
+              xlinkHref={backImage}
             />
           </g>
         </g>
